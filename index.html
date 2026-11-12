@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="theme-color" content="#262140">
+  <title>SpanBuy spreadsheet | Categorías, tallas y fotos QC</title>
+  <meta name="description" content="Explora diez categorías en CAFANS con esta guía del SpanBuy spreadsheet. Aprende a verificar enlaces, comparar tallas, revisar fotos QC y calcular el coste total.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SpanBuy spreadsheet | Categorías, tallas y fotos QC">
+  <meta property="og:description" content="Guía en español para explorar categorías en CAFANS y comprobar enlaces, medidas, fotos QC y costes antes de comprar.">
+  <link rel="preconnect" href="https://nikearprod.vtexassets.com">
+  <!-- Bing no permitió verificar su primera página. La investigación alternativa examinó diez páginas recuperadas mediante búsqueda web sobre categorías, enlaces, fichas y QC. -->
+  <style>
+    :root{--paper:#f5f3f9;--card:#fff;--ink:#262140;--muted:#544e65;--line:#dcd6e8;--lime:#dcef9d}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.6 system-ui,sans-serif}
+    .wrap{width:min(72rem,calc(100% - 2rem));margin-inline:auto}
+    a{color:inherit}
+    a:focus-visible,summary:focus-visible{outline:3px solid #7954c3;outline-offset:4px}
+    header,footer{background:var(--ink);color:#fff}
+    .bar{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:.85rem;flex-wrap:wrap}
+    .logo{font-weight:850;letter-spacing:.09em;text-decoration:none}
+    .hero{display:grid;grid-template-columns:1.16fr 1fr;gap:clamp(1rem,4vw,3.5rem);align-items:center;padding-block:clamp(1.5rem,4vw,3.25rem)}
+    h1,h2,h3,p,figure{margin:0}
+    h1{font-size:clamp(2.5rem,7vw,5.5rem);line-height:1;letter-spacing:-.065em;overflow-wrap:anywhere}
+    h2{font-size:clamp(1.5rem,3.5vw,2.3rem);line-height:1.15;letter-spacing:-.035em;margin-bottom:.75rem}
+    h3{font-size:1.13rem;line-height:1.25;margin-bottom:.55rem}
+    .hero p{max-width:54ch;margin-block:1rem;color:var(--muted)}
+    .button{display:inline-block;background:var(--lime);padding:.65rem 1rem;border-radius:.45rem;font-weight:750;text-decoration:none}
+    .hero figure,.card,details{background:var(--card);border:1px solid var(--line);border-radius:.85rem}
+    img{display:block;width:100%;height:auto;object-fit:contain}
+    .hero img{aspect-ratio:4/3;background:#fff;border-radius:.85rem .85rem 0 0}
+    figcaption{padding:.55rem .8rem;color:var(--muted);font-size:.87rem}
+    section{margin-bottom:2.8rem}
+    .categories,.gallery,.articles{display:grid;gap:.65rem}
+    .categories{grid-template-columns:repeat(5,minmax(0,1fr))}
+    .categories a{display:flex;align-items:center;justify-content:space-between;gap:.5rem;min-height:3.4rem;padding:.6rem .75rem;border:1px solid var(--line);border-radius:.5rem;background:var(--card);font-weight:700;text-decoration:none}
+    .categories a:hover{background:var(--lime)}
+    .gallery,.articles{grid-template-columns:repeat(4,minmax(0,1fr))}
+    .gallery img{aspect-ratio:1;object-fit:contain;border-radius:.85rem .85rem 0 0}
+    .intro{color:var(--muted);margin-bottom:.85rem}
+    article{padding:1rem}
+    article p{font-size:.96rem}
+    details{padding:.7rem .95rem;margin-bottom:.55rem}
+    summary{cursor:pointer;font-weight:750}
+    details p{margin-top:.45rem}
+    footer p{max-width:64ch;font-size:.9rem}
+    @media(max-width:54rem){.categories{grid-template-columns:repeat(3,minmax(0,1fr))}.articles{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:38rem){.hero{grid-template-columns:1fr}.categories,.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.articles{grid-template-columns:1fr}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "inLanguage":"es",
+    "name":"Preguntas sobre SpanBuy spreadsheet",
+    "mainEntity":[
+      {"@type":"Question","name":"¿Qué es un SpanBuy spreadsheet?","acceptedAnswer":{"@type":"Answer","text":"Es un índice que agrupa referencias y enlaces de productos por categoría. Los accesos de esta guía llevan al catálogo de CAFANS."}},
+      {"@type":"Question","name":"¿Cómo sé si un enlace sigue activo?","acceptedAnswer":{"@type":"Answer","text":"Abre la ficha y comprueba que carga, muestra el mismo modelo y permite seleccionar la talla o el color que buscas."}},
+      {"@type":"Question","name":"¿Las fotos QC sirven para autenticar un artículo?","acceptedAnswer":{"@type":"Answer","text":"Por sí solas son insuficientes. Sirven para revisar el estado visible y comparar la variante fotografiada con la ficha."}},
+      {"@type":"Question","name":"¿Cómo comparo el coste de dos artículos?","acceptedAnswer":{"@type":"Answer","text":"Suma el precio, el envío y los cargos aplicables que figuren en cada opción. Convierte ambos totales a la misma moneda antes de compararlos."}}
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/bkkhn/">
+</head>
+<body>
+  <header>
+    <div class="wrap bar">
+      <a class="logo" href="https://www.cafans.com">CAFANS</a>
+      <a href="https://www.cafans.com">Ver catálogo</a>
+    </div>
+  </header>
+  <main class="wrap">
+    <div class="hero">
+      <div>
+        <h1>SpanBuy spreadsheet</h1>
+        <p>Empieza por una categoría y reduce la búsqueda a los modelos que te interesan. Esta guía independiente en español explica cómo comprobar fichas, comparar tallas y revisar fotos de control de calidad antes de elegir.</p>
+        <a class="button" href="https://www.cafans.com">Explorar CAFANS</a>
+      </div>
+      <figure>
+        <img src="https://nikearprod.vtexassets.com/arquivos/ids/155414-640-640/CW2288_111_A_PREM-hei-3144-wid-3144-fmt.jpg?v=638086277575670000" width="640" height="640" alt="Vista lateral de una zapatilla blanca Nike Air Force 1 ’07" fetchpriority="high" loading="eager" decoding="async">
+        <figcaption>Nike Air Force 1 ’07 · Referencia visual</figcaption>
+      </figure>
+    </div>
+    <section aria-labelledby="categorias">
+      <h2 id="categorias">Categorías de CAFANS</h2>
+      <nav class="categories" aria-label="Categorías del catálogo">
+        <a href="https://cafans.com/category-911-Shoes.html">Calzado <span aria-hidden="true">↗</span></a>
+        <a href="https://cafans.com/category-912-Hoodies%2FSweaters.html">Sudaderas y jerséis <span aria-hidden="true">↗</span></a>
+        <a href="https://cafans.com/category-913-T-Shirts.html">Camisetas <span aria-hidden="true">↗</span></a>
+        <a href="https://cafans.com/category-914-Jackets.html">Chaquetas <span aria-hidden="true">↗</span></a>
+        <a href="https://cafans.com/category-915-Pants%2FShorts.html">Pantalones y shorts <span aria-hidden="true">↗</span></a>
+        <a href="https://cafans.com/category-916-Headwear.html">Gorras y sombreros <span aria-hidden="true">↗</span></a>
+        <a href="https://cafans.com/category-917-Sets.html">Conjuntos <span aria-hidden="true">↗</span></a>
+        <a href="https://cafans.com/category-918-underwear%2Funderpants.html">Ropa interior <span aria-hidden="true">↗</span></a>
+        <a href="https://cafans.com/category-919-Jersey.html">Camisetas deportivas <span aria-hidden="true">↗</span></a>
+        <a href="https://cafans.com/category-920-Accessories.html">Accesorios <span aria-hidden="true">↗</span></a>
+      </nav>
+    </section>
+    <section aria-labelledby="guias">
+      <h2 id="guias">Qué revisar antes de elegir</h2>
+      <div class="articles">
+        <article class="card">
+          <h3>Enlaces de productos SpanBuy</h3>
+          <p>Para buscar zapatillas por modelo, empieza por el nombre y añade el color. Comprueba si el enlace de producto sigue activo, si coincide la referencia del fabricante y si la variante elegida aparece disponible. Al guardar fichas de distintos vendedores, anota la fecha de consulta y el enlace de origen.</p>
+        </article>
+        <article class="card">
+          <h3>Guía de tallas SpanBuy</h3>
+          <p>Para comparar tallas de zapatillas en centímetros, mide ambos pies y usa el mayor. Busca la equivalencia en la tabla del modelo. En sudaderas, revisa el ancho de pecho y el largo de manga. Para acertar con la talla de una gorra o de una pulsera, compara el contorno indicado con tu medida.</p>
+        </article>
+        <article class="card">
+          <h3>Fotos QC de SpanBuy</h3>
+          <p>En las fotos de control de calidad del almacén, revisa el estado de la suela, las costuras y la etiqueta de talla. En bolsos, pide una vista del interior y de los herrajes si faltan. Una imagen del vendedor sirve como referencia visual. Para revisar tu unidad, comprueba que las fotos QC correspondan a tu pedido.</p>
+        </article>
+        <article class="card">
+          <h3>Envío y coste total con SpanBuy</h3>
+          <p>Para comparar envíos internacionales, consulta el destino, el peso del paquete y si la tarifa usa peso volumétrico. Si compras desde España, compara el coste final en euros y revisa si la estimación incluye envío, impuestos y posibles gastos de gestión. Confirma los plazos con el servicio elegido.</p>
+        </article>
+      </div>
+    </section>
+    <section aria-labelledby="referencias">
+      <h2 id="referencias">Referencias de prendas y accesorios</h2>
+      <p class="intro">Las imágenes ilustran estilos y detalles. Consulta cada ficha para confirmar disponibilidad.</p>
+      <div class="gallery">
+        <figure class="card">
+          <img src="https://assets.christiandior.com/is/image/diorprod/327C25A2970X5803_E01-1?%24default_GHC%24=&amp;crop=457%2C150%2C1095%2C1361&amp;wid=360" width="360" height="447" alt="Chaqueta azul con capucha y motivo Dior Oblique" loading="lazy" decoding="async">
+          <figcaption>Dior · Chaqueta con capucha</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1659595532/681264_3HAGJ_2564_001_100_0000_Light-Casquette-en-toileGG-jumbo.jpg" width="1200" height="1200" alt="Gorra beige Gucci de lona Jumbo GG con visera curva" loading="lazy" decoding="async">
+          <figcaption>Gucci · Gorra Jumbo GG</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="https://assets.hermes.com/is/image/hermesproduct/bracelet-clic-h--700001F%204P-front-1-300-0-1000-1000_b.jpg?wid=360" width="360" height="360" alt="Pulsera rígida Hermès Clic H con cierre en forma de H" loading="lazy" decoding="async">
+          <figcaption>Hermès · Pulsera Clic H</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="https://au.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-neverfull-mm--M46987_PM1_Back%20view.png?hei=360&amp;wid=360" width="360" height="360" alt="Bolso Louis Vuitton Neverfull MM de lona Monogram con asas de piel clara" loading="lazy" decoding="async">
+          <figcaption>Louis Vuitton · Neverfull MM</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section aria-labelledby="preguntas">
+      <h2 id="preguntas">Preguntas sobre SpanBuy spreadsheet</h2>
+      <details open>
+        <summary>¿Qué es un SpanBuy spreadsheet?</summary>
+        <p>Es un índice que agrupa referencias y enlaces de productos por categoría. Los accesos de esta guía llevan al catálogo de CAFANS.</p>
+      </details>
+      <details>
+        <summary>¿Cómo sé si un enlace sigue activo?</summary>
+        <p>Abre la ficha y comprueba que carga, muestra el mismo modelo y permite seleccionar la talla o el color que buscas.</p>
+      </details>
+      <details>
+        <summary>¿Las fotos QC sirven para autenticar un artículo?</summary>
+        <p>Por sí solas son insuficientes. Sirven para revisar el estado visible y comparar la variante fotografiada con la ficha.</p>
+      </details>
+      <details>
+        <summary>¿Cómo comparo el coste de dos artículos?</summary>
+        <p>Suma el precio, el envío y los cargos aplicables que figuren en cada opción. Convierte ambos totales a la misma moneda antes de compararlos.</p>
+      </details>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap bar">
+      <p>Guía editorial independiente. Las marcas se muestran como referencias visuales.</p>
+      <a href="https://www.cafans.com">Ir a CAFANS</a>
+    </div>
+  </footer>
+</body>
+</html>
